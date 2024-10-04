@@ -10,7 +10,7 @@ def create_sum_by_season_day(df):
     jumlah_penyewa = df.groupby('season_day')['cnt_day'].mean()
     return jumlah_penyewa
 
-all_df = pd.read_csv("https://github.com/ClaysHere/project_bike_sharing/blob/main/dashboard/all_data.csv")
+all_df = pd.read_csv("https://raw.githubusercontent.com/ClaysHere/project_bike_sharing/refs/heads/main/dashboard/all_data.csv")
 
 all_df["dteday"] = pd.to_datetime(all_df["dteday"])
 
